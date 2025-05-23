@@ -89,7 +89,7 @@ function Recommune() {
         <section
           className="h-screen content"
           style={{
-            backgroundImage: "url(../src/assets/hero-bg.png)",
+            backgroundImage: `url(${Herobg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
