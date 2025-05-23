@@ -2,12 +2,39 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './Recommune.css';
+import Logo from "../assets/Logo.svg";
+import Applebtn1 from '../assets/apple-btn-1.png';
+
+import Applewhite from '../assets/apple-white-btn.png';
+import Playwhite from '../assets/play-white-btn.png';
+import Btn1 from '../assets/btn-1.png';
+import Btn2 from '../assets/btn-2.png';
+import Herophone from '../assets/hero-phone.png';
+import Herobg from '../assets/hero-bg.png';
+import Herophone3 from '../assets/hero-phone-3.png';
+import Herophone2 from '../assets/hero-phone-2.png';
+import Homebg from '../assets/home-bg.png';
+import Homephone from '../assets/home-phone.png';
+import Btn from '../assets/btn.png';
+import Btnn from '../assets/btnn.png';
+import Playbtn2 from '../assets/play-btn-2.png';
+import Arrow from '../assets/arrow.svg';
+import Approach from '../assets/approach.png';
+import Benefits from '../assets/benefits.png';
+import Friends from '../assets/friends.png';
+import Circle from '../assets/circle.png';
+import Recomune from '../assets/Recomune.mp4'
+import Mockup1 from '../assets/mockup-1.png';
+import Mockup2 from '../assets/mockup-2.png';
+import Mockup3 from '../assets/mockup-3.png';
+import Trusted from '../assets/trusted.png';
+import Trusted2 from '../assets/trusted-2.png';
 
 import { FaYoutube, FaLinkedin , FaInstagram ,FaFacebook } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Index() {
+function Recommune() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -70,7 +97,7 @@ function Index() {
           <div className="relative container max-w-7xl mx-auto ">
             <div className="logo">
               <img
-                src="../src/assets/Logo.svg"
+                src={Logo}
                 alt="Logo"
                 className="absolute top-4 left-0"
               />
@@ -92,19 +119,19 @@ function Index() {
                 </p>
                 <div className="flex gap-4 mt-4">
                   <img
-                    src="../src/assets/btn-1.png"
+                    src={Btn1}
                     alt=""
                     className="w-[220px]"
                   />
                   <img
-                    src="../src/assets/btn-2.png"
+                    src={Btn2}
                     alt=""
                     className="w-[220px]"
                   />
                 </div>
               </div>
               <img
-                src="../src/assets/hero-phone.png"
+                src={Herophone}
                 alt="Hero"
                 className="h-[1000px] ml-[-200px]  "
               />
@@ -114,7 +141,7 @@ function Index() {
         <section
           className="h-screen content"
           style={{
-            backgroundImage: "url(../src/assets/hero-bg.png)",
+            backgroundImage: `url(${Herobg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -122,7 +149,7 @@ function Index() {
           <div className="relative container max-w-7xl mx-auto ">
             <div className="logo">
               <img
-                src="../src/assets/Logo.svg"
+                src={Logo}
                 alt="Logo"
                 className="absolute top-4 left-0"
               />
@@ -144,19 +171,19 @@ function Index() {
                 </p>
                 <div className="flex gap-4 mt-4">
                   <img
-                    src="../src/assets/btn-1.png"
+                    src={Btn1}
                     alt=""
                     className="w-[220px]"
                   />
                   <img
-                    src="../src/assets/btn-2.png"
+                    src={Btn2}
                     alt=""
                     className="w-[220px]"
                   />
                 </div>
               </div>
               <img
-                src="../src/assets/hero-phone-2.png"
+                src={Herophone2}
                 alt="Hero"
                 className="h-[1000px] ml-[-200px]  "
               />
@@ -166,7 +193,7 @@ function Index() {
         <section
           className="h-screen content"
           style={{
-            backgroundImage: "url(../src/assets/hero-bg.png)",
+            backgroundImage: `url(${Herobg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -174,7 +201,7 @@ function Index() {
           <div className="relative container max-w-7xl mx-auto ">
             <div className="logo">
               <img
-                src="../src/assets/Logo.svg"
+                src={Logo}
                 alt="Logo"
                 className="absolute top-4 left-0"
               />
@@ -196,19 +223,19 @@ function Index() {
                 </p>
                 <div className="flex gap-4 mt-4">
                   <img
-                    src="../src/assets/btn-1.png"
+                    src={Btn1}
                     alt=""
                     className="w-[220px]"
                   />
                   <img
-                    src="../src/assets/btn-2.png"
+                    src={Btn2}
                     alt=""
                     className="w-[220px]"
                   />
                 </div>
               </div>
               <img
-                src="../src/assets/hero-phone-3.png"
+                src={Herophone3}
                 alt="Hero"
                 className="h-[1000px] ml-[-200px]  "
               />
@@ -220,7 +247,7 @@ function Index() {
       <section
         className="h-screen"
         style={{
-          backgroundImage: "url(../src/assets/home-bg.png)",
+          backgroundImage: `url(${Homebg})`,
 
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -229,7 +256,7 @@ function Index() {
         <div className="container max-w-7xl mx-auto px-4 flex items-center justify-center h-screen">
           <div className="flex items-center justify-between">
             <img
-              src="../src/assets/home-phone.png"
+              src={Homephone}
               alt=""
               className="h-[625px] ml-[-140px]"
             />
@@ -237,12 +264,12 @@ function Index() {
               <div className="flex flex-col gap-4 items-end">
                 <div className="group relative h-16 flex justify-end">
                   <img
-                    src="../src/assets/btn.png"
+                    src={Btn}
                     alt=""
                     className="h-16 w-16 absolute top-0 right-0 z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-300 cursor-pointer"
                   />
                   <img
-                    src="../src/assets/apple-btn-1.png"
+                    src={Applebtn1}
                     alt=""
                     className="h-16 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   />
@@ -250,12 +277,12 @@ function Index() {
 
                 <div className="group relative h-16 flex justify-end">
                   <img
-                    src="../src/assets/btnn.png"
+                    src={Btnn}
                     alt=""
                     className="h-16 w-16 absolute top-0 right-0 z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-300 cursor-pointer"
                   />
                   <img
-                    src="../src/assets/play-btn-2.png"
+                    src={Playbtn2}
                     alt=""
                     className="h-16 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   />
@@ -314,23 +341,23 @@ function Index() {
                 How Recomune Boosts Brain Health
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Talking regularly
+                <img src={Arrow} alt="" /> Talking regularly
                 keeps the brain engaged & improves memory.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Interaction lowers
+                <img src={Arrow} alt="" /> Interaction lowers
                 blood pressure and heart disease risk.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Engaging
+                <img src={Arrow} alt="" /> Engaging
                 conversations reduce anxiety and improve rest.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Seniors feel
+                <img src={Arrow} alt="" /> Seniors feel
                 valued, heard, and part of a community.
               </p>
               <img
-                src="../src/assets/approach.png"
+                src={Approach}
                 alt=""
                 className="mt-12 w-[568px] h-[571px]"
               />
@@ -356,19 +383,19 @@ function Index() {
                Why Socializing with Recomune Matters
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Connected seniors have stronger immune responses.
+                <img src={Arrow} alt="" /> Connected seniors have stronger immune responses.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Interaction lowers blood pressure and heart disease risk.
+                <img src={Arrow} alt="" /> Interaction lowers blood pressure and heart disease risk.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Engaging conversations reduce anxiety and improve rest.
+                <img src={Arrow} alt="" /> Engaging conversations reduce anxiety and improve rest.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Seniors feel valued, heard, and part of a community.
+                <img src={Arrow} alt="" /> Seniors feel valued, heard, and part of a community.
               </p>
               <img
-                src="../src/assets/benefits.png"
+                src={Benefits}
                 alt=""
                 className="mt-12 w-[568px] h-[571px]"
               />
@@ -394,19 +421,19 @@ function Index() {
                Why Socializing with Recomune Matters
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Large buttons, clear text, & voice-friendly features.
+                <img src={Arrow} alt="" /> Large buttons, clear text, & voice-friendly features.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Resembles popular calling/chat platforms seniors may recognize.
+                <img src={Arrow} alt="" /> Resembles popular calling/chat platforms seniors may recognize.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Gentle reminders encourage regular use.
+                <img src={Arrow} alt="" /> Gentle reminders encourage regular use.
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" />Privacy and data protection built into every call and message.
+                <img src={Arrow} alt="" />Privacy and data protection built into every call and message.
               </p>
               <img
-                src="../src/assets/friends.png"
+                src={Friends}
                 alt=""
                 className="mt-12 w-[568px] h-[571px]"
               />
@@ -447,7 +474,7 @@ function Index() {
 
 
             </div>
-            <div><img src="../src/assets/circle.png" alt="" className="w-[426px] h-[426px]" /></div>
+            <div><img src={Circle} alt="" className="w-[426px] h-[426px]" /></div>
             <div className="flex flex-col gap-8  ">
               <div className="bg-[#071330] p-4 rounded-lg flex flex-col  items-start">
                 <h1 className="text-[18px] font-semibold text-[#2563EA]">Always Available Support</h1>
@@ -473,7 +500,7 @@ function Index() {
       </section>
 
       <section className="bg-[#040C20] py-12 ">
-        <video src="../src/assets/Recomune.mp4" loop muted autoPlay className="w-[1798px] rounded-lg mx-auto   "></video>
+        <video src={Recomune} loop muted autoPlay className="w-[1798px] rounded-lg mx-auto   "></video>
 
       </section>
 
@@ -498,23 +525,23 @@ function Index() {
                Key Highlights:
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> 24/7 realistic voice chats with live captions
+                <img src={Arrow} alt="" /> 24/7 realistic voice chats with live captions
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Emotion-aware conversations for deeper connection
+                <img src={Arrow} alt="" /> Emotion-aware conversations for deeper connection
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Perfect for easing loneliness and lifting your spirits
+                <img src={Arrow} alt="" /> Perfect for easing loneliness and lifting your spirits
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Just tap to call — your friend is always ready
+                <img src={Arrow} alt="" /> Just tap to call — your friend is always ready
               </p>
               <div className="flex gap-4 mt-2">
-                <img src="../src/assets/apple-white-btn.png" alt="" className="w-[180px] h-[50px] " />
-                <img src="../src/assets/play-white-btn.png" alt="" className="w-[180px] h-[50px] " />
+                <img src={Applewhite} alt="" className="w-[180px] h-[50px] " />
+                <img src={Playwhite} alt="" className="w-[180px] h-[50px] " />
               </div>
             </div>
-            <img src="../src/assets/mockup-1.png" alt=""  className="w-[789px] h-[556px]"/>
+            <img src={Mockup1} alt=""  className="w-[789px] h-[556px]"/>
             </div>
 
             <div className="w-[1328px] h-[590px] p-4 rounded-3xl flex items-center justify-between"  style={{ background: 'linear-gradient(90deg, #0D1B3E 0%, #10224F 100%)' }}>
@@ -526,23 +553,23 @@ function Index() {
                Key Highlights:
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Chat responses tailored to your mood and interests
+                <img src={Arrow} alt="" /> Chat responses tailored to your mood and interests
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> AI learns and evolves with your preferences
+                <img src={Arrow} alt="" /> AI learns and evolves with your preferences
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Share stories, daily updates, or just vent
+                <img src={Arrow} alt="" /> Share stories, daily updates, or just vent
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> No judgment, just genuine understanding
+                <img src={Arrow} alt="" /> No judgment, just genuine understanding
               </p>
               <div className="flex gap-4 mt-2">
-                <img src="../src/assets/apple-white-btn.png" alt="" className="w-[180px] h-[50px] " />
-                <img src="../src/assets/play-white-btn.png" alt="" className="w-[180px] h-[50px] " />
+                <img src={Applewhite} alt="" className="w-[180px] h-[50px] " />
+                <img src={Playwhite} alt="" className="w-[180px] h-[50px] " />
               </div>
             </div>
-            <img src="../src/assets/mockup-2.png" alt=""  className="w-[789px] h-[556px]"/>
+            <img src={Mockup2} alt=""  className="w-[789px] h-[556px]"/>
             </div>
 
             <div className="w-[1328px] h-[590px] p-4 rounded-3xl flex items-center justify-between"  style={{ background: 'linear-gradient(90deg, #0D1B3E 0%, #10224F 100%)' }}>
@@ -554,23 +581,23 @@ function Index() {
                Key Highlights:
               </h3>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Secure, judgment-free zone for meaningful chats
+                <img src={Arrow} alt="" /> Secure, judgment-free zone for meaningful chats
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Text-to-speech with real-time captions
+                <img src={Arrow} alt="" /> Text-to-speech with real-time captions
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Simple, intuitive interface — no learning curve
+                <img src={Arrow} alt="" /> Simple, intuitive interface — no learning curve
               </p>
               <p className="text-[18px] font-normal text-[#B5BED6] flex gap-2">
-                <img src="../src/assets/arrow.svg" alt="" /> Promotes mindfulness, connection, and calm
+                <img src={Arrow} alt="" /> Promotes mindfulness, connection, and calm
               </p>
                 <div className="flex gap-4 mt-2">
-                  <img src="../src/assets/apple-white-btn.png" alt="" className="w-[180px] h-[50px] " />
-                  <img src="../src/assets/play-white-btn.png" alt="" className="w-[180px] h-[50px] " />
+                  <img src={Applewhite} alt="" className="w-[180px] h-[50px] " />
+                  <img src={Playwhite} alt="" className="w-[180px] h-[50px] " />
                 </div>
             </div>
-            <img src="../src/assets/mockup-3.png" alt=""  className="w-[789px] h-[556px]"/>
+            <img src={Mockup3} alt=""  className="w-[789px] h-[556px]"/>
             </div>
 
             </div>
@@ -582,7 +609,7 @@ function Index() {
             <div className="container max-w-7xl mx-auto flex items-center justify-center ">
               
               <div className="flex justify-between gap-16">
-                <img src="../src/assets/trusted.png" alt="" className="w-[425px] h-[578px] ml-[-40px] mt-[130px]" />
+                <img src={Trusted} alt="" className="w-[425px] h-[578px] ml-[-40px] mt-[130px]" />
                 <div className="flex flex-col gap-12 items-start">
                   <div className="flex flex-col  items-start">
                     <h1 className="text-[22px] font-medium text-[#2563EA]">01</h1>
@@ -606,7 +633,7 @@ function Index() {
                   </div>
 
                 </div>
-                <img src="../src/assets/trusted-2.png" alt="" className="w-[425px] h-[282px] mr-[-40px] mt-[280px]" />
+                <img src={Trusted2} alt="" className="w-[425px] h-[282px] mr-[-40px] mt-[280px]" />
               </div>
             </div>
             
@@ -614,7 +641,7 @@ function Index() {
 
           <section className="bg-[#071534] py-12">
             <div className="container max-w-7xl mx-auto flex flex-col items-center justify-center ">
-              <img src="../src/assets/Logo.svg" alt="" className="w-[378px] h-[112px]"/>
+              <img src={Logo} alt="" className="w-[378px] h-[112px]"/>
               <p className="text-[16px] font-normal text-[#B5BED6] text-center leading-[30px] mt-4">Connecting people, fostering meaningful conversations, and making every interaction count.</p>
             <div className="flex gap-10 mt-12">
               <p className="text-[16px] font-normal text-[#B5BED6]">Terms & Condition</p>
@@ -622,8 +649,8 @@ function Index() {
               <p className="text-[16px] font-normal text-[#B5BED6]">Support</p>
             </div>
             <div className="flex gap-4 mt-4">
-              <img src="../src/assets/apple-white-btn.png" alt="" className="w-[180px] h-[50px] " />
-              <img src="../src/assets/play-white-btn.png" alt="" className="w-[180px] h-[50px] " />
+              <img src={Applewhite} alt="" className="w-[180px] h-[50px] " />
+              <img src={Playwhite} alt="" className="w-[180px] h-[50px] " />
             </div>
             </div>
 
@@ -658,4 +685,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Recommune;
