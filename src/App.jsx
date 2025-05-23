@@ -1,10 +1,12 @@
 import React from 'react'
-import Index from './index.jsx'
+import Index from '.'
+
 
 function App() {
   return (
     <>
-    <Index />
+  <Index />
+
     </>
   )
 }
