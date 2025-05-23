@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: max-content;
+  overflow-x: hidden;
+}
+
+.content {
+  flex: 0 0 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
