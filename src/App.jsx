@@ -1,11 +1,11 @@
 import React from 'react'
-import Index from '.'
 
+import Recommune from './components/Recommune.jsx'
 
 function App() {
   return (
     <>
-  <Index />
+ <Recommune />
 
     </>
   )
