@@ -1,11 +1,13 @@
 import React from 'react'
+import Recomune from './components/Recomune'
 
-import Recommune from './components/Recommune.jsx'
+
+
 
 function App() {
   return (
     <>
- <Recommune />
+ <Recomune/>
 
     </>
   )
