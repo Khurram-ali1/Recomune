@@ -42,51 +42,65 @@ function Recomune() {
   const baseRef = useRef(null);
   
 
-  useEffect(() => {
-    const container = containerRef.current;
-    const sections = gsap.utils.toArray(".horizontal-scroll .content");
+useEffect(() => {
+  const container = containerRef.current;
+  const sections = gsap.utils.toArray(".horizontal-scroll .content");
 
+  gsap.registerPlugin(ScrollTrigger);
+
+  if (window.innerWidth >= 768) {
+    // ✅ Desktop: Horizontal Scroll
     const ctx = gsap.context(() => {
       gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
-        ease: "sine.inOut", // Smoother easing
+        ease: "sine.inOut",
         scrollTrigger: {
           trigger: container,
           pin: true,
-          scrub: 0.5, // Slightly slower scrub for smoother transitions
+          scrub: 0.5,
           snap: {
             snapTo: 1 / (sections.length - 1),
-            duration: 0.1, // Longer duration for smoother snap
+            duration: 0.1,
             delay: 0.1,
-            ease: "power3.inOut", // More pronounced easing curve
+            ease: "power3.inOut",
           },
           end: () => `+=${container.offsetWidth * sections.length}`,
           anticipatePin: 1,
           invalidateOnRefresh: true,
-          markers: false, // Remove in production
         },
       });
+    }, container);
 
-      // Add subtle opacity fade between sections for extra smoothness
-      sections.forEach((section, i) => {
+    return () => ctx.revert();
+  } else {
+    // ✅ Mobile: Slide in from right (x movement)
+    const ctx = gsap.context(() => {
+      sections.forEach((section, index) => {
+        if (index === 0) return; // Skip first section
+
         gsap.fromTo(
           section,
-          { autoAlpha: 0.8 },
+          { x: "100%" },
           {
-            autoAlpha: 1,
+            x: "0%",
+            duration: 0.6,
+            ease: "power2.out",
             scrollTrigger: {
               trigger: section,
-              start: "left center",
-              end: "right center",
-              scrub: 0.4,
+              start: "top bottom", // Trigger when section enters view
+              end: "top center",
+              scrub: true,
+              toggleActions: "play none none reverse",
             },
           }
         );
       });
     }, container);
 
-    return () => ctx.revert(); // Cleanup
-  }, []);
+    return () => ctx.revert();
+  }
+}, []);
+
   
   
 
