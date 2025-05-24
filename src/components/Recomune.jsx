@@ -753,7 +753,7 @@ function Recomune() {
             </div>
 
           </section>
-          <section className="bg-[#2563EA] py-2 px-6">
+          <section className="bg-[#2563EA] py-2 md:px-24">
       <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between">
         <h1 className="text-[12px] md:text-[15px] font-light text-white">
           © 2025 Recomune | All Rights Reserved.
