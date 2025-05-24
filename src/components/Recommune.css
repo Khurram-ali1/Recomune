@@ -1,22 +1,66 @@
+
+
 body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
+
+/* Base styles */
+
+
 .horizontal-scroll {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 100vh;
-  width: max-content;
-  overflow-x: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
-.content {
-  flex: 0 0 100vw;
+/* Default section styling */
+.horizontal-scroll .content {
+  width: 100vw;
   height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  .horizontal-scroll {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .horizontal-scroll .content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* Desktop (horizontal scroll) */
+@media (min-width: 768px) {
+  .horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+}
+
+/* Mobile (vertical stacking) */
+@media (max-width: 767px) {
+  .horizontal-scroll {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .horizontal-scroll .content {
+    width: 100vw;
+    height: 100vh; /* full-screen stacked sections */
+  }
+}
+
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .screen-logo{
@@ -232,3 +276,4 @@ margin-top: 75px;
     }
 
 }
+
