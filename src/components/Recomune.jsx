@@ -392,7 +392,7 @@ function Recomune() {
 
 
           <div className="flex items-start gap-[20px] md:gap-[180px] mt-0 md:mt-20 connection-box">
-            <div className="flex flex-col gap-2 items-start hidden connection-number">
+            <div className="flex flex-col gap-2 items-start md:flex hidden connection-number">
               <h1 className="text-[189px] font-bold text-[#1D2436] connection-num">01</h1>
               <h1 className="text-[128px] font-bold text-[#1D2436] mt-[-100px] connection-heading">
                 Approach
@@ -438,7 +438,7 @@ function Recomune() {
           </div>
 
           <div className="flex items-start gap-[290px] mt-24 connection-box2">
-            <div className="flex flex-col gap-2 items-start hidden connection-number">
+            <div className="flex flex-col gap-2 items-start md:flex hidden connection-number">
               <h1 className="text-[189px] font-bold text-[#1D2436] connection-num">02</h1>
               <h1 className="text-[128px] font-bold text-[#1D2436] mt-[-100px] connection-heading">
                 Benefits
@@ -477,7 +477,7 @@ function Recomune() {
           </div>
 
           <div className="flex items-start gap-[350px] mt-24 connection-box3">
-            <div className="flex flex-col gap-2 items-start hidden connection-number">
+            <div className="flex flex-col gap-2 items-start md:flex hidden connection-number">
               <h1 className="text-[189px] font-bold text-[#1D2436] connection-num">03</h1>
               <h1 className="text-[128px] font-bold text-[#1D2436] mt-[-100px] connection-heading">
                 Friends
